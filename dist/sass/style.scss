@@ -1,0 +1,172 @@
+@import "variables/colors.scss";
+@import "variables/mixin.scss";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'montserrat'
+}
+
+header{
+  @include flex(column, center, center);
+  @include height-widht(70px, 100%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  color: $secondary-color;
+  font-size: 35px;
+  border-bottom: 5px;
+  border-color: $secondary-color;
+  div{
+    @include flex(row, center, space-around);
+    div{
+      @include flex(row, center, center);
+      gap: 30px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.link-nav{
+  color: $secondary-color;
+  transition: 0.5s;
+  text-decoration: none;
+  &:hover{
+    font-size: 21px;
+    color: rgb(253, 253, 253);
+    transition: 0.3s;
+  }
+}
+
+.promotion{
+  @include height-widht(90vh, 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 2%, $primary-color 10%);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  
+  .promotion-text{
+    font-size: 50px;
+    margin-top: 150px;
+    margin-left: 200px;
+    position: absolute;
+    width: 45%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(100%);
+    &.active {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  }
+  #see-products{
+    background-color: $secondary-color;
+    @include height-widht(60px, 400px);
+    border-radius: 30px;
+    border: transparent;
+    font-size: 40px;
+    color: $primary-color;
+    margin-top: 300px;
+    margin-left: 200px
+  }
+}
+
+main{
+  @include height-widht(120vh, 100%);
+  @include flex(row, center, space-around);
+  flex-wrap: wrap;
+  gap: 50px 110px;
+  div{
+    @include flex(column, start, center);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    img{
+      @include height-widht(230px, 230px);
+    }
+    p{
+      padding: 0px 0px 10px 0px;
+    }
+    button{
+      @include height-widht(20px, 100px);
+      background-color: $secondary-color;
+      border: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.about{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, $primary-color 80%, rgba(255,255,255,1) 95%);
+  height: 110vh;
+  @include flex(column,center, center);
+  gap: 10px;
+  #about-title{
+    color: $secondary-color;
+    font-size: 60px;
+  }
+  #about-text{
+    color: white;
+    width: 300px;
+    margin-left: 460px;
+  }
+}
+
+.social-media{
+  @include flex(row, center, center);
+  gap: 50px;
+  padding-top: 10px
+}
+
+.social-div{
+  @include height-widht(30px, 30px);
+  @include flex(column, center, center);
+  border: 1px solid $secondary-color;
+  border-radius: 50px;
+}
+
+.social-img{
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 1px;
+}
+
+
+@media (max-width: 425px){
+  #marca{
+    visibility: collapse;
+  }
+  .links-nav{
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+  #carrinho{
+    margin-right: 160px;
+  }
+
+  .promotion{
+    @include flex(row, center, center);
+    
+  }
+
+  .sell{
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+  }
+
+  p{
+    font-size: 30px;
+  }
+}

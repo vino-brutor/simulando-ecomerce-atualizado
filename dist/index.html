@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sóques</title>
+  <link rel="stylesheet" href="/dist/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <header>
+    <div>
+      <p id="marca">SÓQUES</p>
+      <div class="links-nav">
+        <a href="#" class="link-nav">Início</a>
+        <a href="#" class="link-nav">Carrinho</a>
+        <a href="#" class="link-nav">Contato</a>
+      </div>
+      <a href="#"><span class="material-symbols-outlined" id="carrinho">shopping_cart</span></a>
+    </div>
+  </header>
+  <hr>
+  <section class="promotion">
+    <h2 class="promotion-text">Meias por 40% OFF</h2>
+    <h2 class="promotion-text">Compre 3 leve 4</h2>
+    <h2 class="promotion-text">20% de desconto na primeira compra</h2>
+    <button id="see-products"><a href="#main">Ver produtos</a></button>
+
+  </section>
+  <main id="main">
+    <div class="product" id="product1">
+      <img src="data:image/jpeg;base64,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" alt="meia old school">
+      <p>Meia oldschool</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+    <div class="product" id="product2">
+      <img src="https://static.netshoes.com.br/produtos/meia-cano-medio-puma-logo-c-3-pares/58/D14-7141-158/D14-7141-158_zoom1.jpg?ts=1695420507&ims=544x" alt="meia puma">
+      <p>Meia puma</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+    <div class="product" id="product3">
+      <img src="https://cdn.awsli.com.br/2500x2500/606/606257/produto/174933333/d1b1c75e2b.jpg" alt="meia bolsonaro">
+      <p>Meia bolsonaro</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+    <div class="product" id="product4">
+      <img src="https://acdn.mitiendanube.com/stores/002/008/600/products/whatsapp-image-2022-08-02-at-23-52-13-21-f6b0dbd319d26d99a016594958528015-240-0.jpeg" alt="meia Homer">
+      <p>Meia Homer Simpson</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+    <div class="product" id="product5">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfYYvK68vA3POl6gatPRx5YqF1L5ohYxLcQ&s" alt="meia paracetamol">
+      <p>Meia Paracetamol</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+    <div class="product" id="product6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3CbQqNjLKHWnX-JkiQXZjRKZ6Krn6J-HBWA&s" alt="meia listrada rosa">
+      <p>Meia listrada rosa</p>
+      <p>R$34,99</p>
+      <button type="button" class="sell">Comprar</button>
+    </div>
+  </main>
+  <section class="about">
+    <h2 id="about-title">QUEM SOMOS NÓS?</h2>
+    <p id="about-text">Nós amammos meias engraçadas e vendemos nossas meias daqui do Rio Grande do Sul para todo o Brasil para quem vê o mundo da mesma forma que a gente!</p>
+    <div class="social-media">
+      <div class="social-div">
+        <a href="#"><img class="social-img" src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-instagram-social-platform-icon-png-image_8704818.png" alt="Instagram"></a>
+      </div>
+      <div class="social-div">
+        <a href="#"><img class="social-img" src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="Youtube"></a>
+      </div>
+      <div class="social-div">
+        <a href="#"><img class="social-img" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Linkedin"></a>
+      </div>
+      <div class="social-div">
+        <a href="#"><img class="social-img" src="https://www.gov.br/mre/pt-br/delbrasupa/facebook-logo-blue-circle-large-transparent-png.png" alt="Linkedin"></a>
+      </div>
+    </div>
+      
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
